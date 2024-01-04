@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "bf922c10-05cd-45b2-b49b-d0a6f3a21da4",
+		"name": "Api-res-MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29025423"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"matiasnzamora@gmail.com\",\r\n    \"password\": \"123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OTcxN2M3YTljY2U3MmJkNWExMWI4MyIsImVtYWlsIjoibWF0aWFzbnphbW9yYUBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0MDIyNDksImV4cCI6MTcwNDQ4ODY0OX0.ngTAZMb6F_OLtENu3iVLCgjnrEbvazEv1rGtTWCKVhU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"matiasnzamora@gmail.com\",\r\n    \"password\": \"123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4000/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "private",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OTcxN2M3YTljY2U3MmJkNWExMWI4MyIsImVtYWlsIjoibWF0aWFzbnphbW9yYUBnbWFpbC5jb20iLCJpYXQiOjE3MDQ0MDIyNDksImV4cCI6MTcwNDQ4ODY0OX0.ngTAZMb6F_OLtENu3iVLCgjnrEbvazEv1rGtTWCKVhU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4000/private",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"private"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
