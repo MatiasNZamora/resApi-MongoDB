@@ -58,7 +58,7 @@ const signIn = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         return res.status(200).json({ token: createToken(user) });
     }
     ;
-    return res.status(400).json({ msg: 'The user does not exist' });
+    return res.status(400).json({ msg: 'The email or password are incorrect' });
 });
 exports.signIn = signIn;
 // min 53:07 

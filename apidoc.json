@@ -1,0 +1,6 @@
+{
+    "name": "TS restApi",
+    "version": "0.1.0",
+    "description": "Basic restApi using Typescript, node, mongodb",
+    "title": "TS Api"
+}

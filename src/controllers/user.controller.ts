@@ -51,7 +51,7 @@ export const signIn = async (req:Request, res:Response) => {
         return res.status(200).json({token: createToken(user)});
     };
 
-    return res.status(400).json({msg:'The user does not exist'});
+    return res.status(400).json({msg:'The email or password are incorrect'});
 
 };
 
